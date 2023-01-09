@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Авторизация{% endblock %}
+
+{% block body %}
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+    {{ form_start(form, { 'action': path('app_login'), 'method': 'POST', 'attr': {'class': 'login-from'} }) }}
+    {{ form_widget(form) }}
+    {{ form_rest(form) }}
+{% endblock %}
