@@ -1,0 +1,29 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+[data-bs-theme=dark] {
+    --bs-body-bg: #364451f5;
+    --modal-gradient-start: #048e7d54;
+    --modal-gradient-end: #262e33c7;
+}
+
+body {
+    background-image: radial-gradient(ellipse farthest-corner at top right, #3e464ef5 20%, #3a4754 80%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.auth-block {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.modal-block {
+    background-color: #364451;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--modal-gradient-start) 20%, var(--modal-gradient-end) 80%);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 500px / 45px;
+    box-shadow: 0 0 13px 3px #06070799;
+}
